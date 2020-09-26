@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		774908BD251BF8BC003F9825 /* WatchFrunk WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 774908BC251BF8BC003F9825 /* WatchFrunk WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77076E73251D757D0024A260 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77076E72251D757D0024A260 /* Settings.swift */; };
+		773011FC251D008600FC7975 /* OpenFrunkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773011FB251D008600FC7975 /* OpenFrunkButton.swift */; };
+		77301248251D4A0300FC7975 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77301247251D4A0300FC7975 /* LoginScreen.swift */; };
+		77301250251D4A7000FC7975 /* VehicleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730124F251D4A7000FC7975 /* VehicleList.swift */; };
+		77301255251D4C1600FC7975 /* TeslaAPIBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77301254251D4C1600FC7975 /* TeslaAPIBridge.swift */; };
+		7730125D251D647200FC7975 /* PagerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730125C251D647200FC7975 /* PagerManager.swift */; };
+		774908BD251BF8BC003F9825 /* FrunkWatchKitApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 774908BC251BF8BC003F9825 /* FrunkWatchKitApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		774908C2251BF8BF003F9825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774908C1251BF8BF003F9825 /* Assets.xcassets */; };
-		774908C9251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 774908C8251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		774908C9251BF8BF003F9825 /* FrunkWatchKitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 774908C8251BF8BF003F9825 /* FrunkWatchKitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		774908CE251BF8BF003F9825 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774908CD251BF8BF003F9825 /* ContentView.swift */; };
 		774908D0251BF8BF003F9825 /* WatchFrunkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774908CF251BF8BF003F9825 /* WatchFrunkApp.swift */; };
 		774908D2251BF8BF003F9825 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774908D1251BF8BF003F9825 /* ComplicationController.swift */; };
 		774908D4251BF8C0003F9825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774908D3251BF8C0003F9825 /* Assets.xcassets */; };
 		774908D7251BF8C0003F9825 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774908D6251BF8C0003F9825 /* Preview Assets.xcassets */; };
+		774908EA251BF8DF003F9825 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774908E9251BF8DF003F9825 /* UserData.swift */; };
+		774908F9251BFABE003F9825 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774908F8251BFABE003F9825 /* Constants.swift */; };
+		776D4CD4251BFC040099F6D5 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 776D4CD3251BFC040099F6D5 /* KeychainAccess */; };
+		778BAE86251E96F400AFAAC9 /* Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778BAE85251E96F400AFAAC9 /* Circular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,13 @@
 			remoteGlobalIDString = 774908C7251BF8BF003F9825;
 			remoteInfo = "WatchFrunk WatchKit Extension";
 		};
+		778BAE9A251EB00000AFAAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 774908B2251BF8BC003F9825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 774908C7251BF8BF003F9825;
+			remoteInfo = "Frunk WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				774908C9251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex in Embed App Extensions */,
+				774908C9251BF8BF003F9825 /* FrunkWatchKitExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +69,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				774908BD251BF8BC003F9825 /* WatchFrunk WatchKit App.app in Embed Watch Content */,
+				774908BD251BF8BC003F9825 /* FrunkWatchKitApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,17 +77,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		774908B8251BF8BC003F9825 /* WatchFrunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchFrunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		774908BC251BF8BC003F9825 /* WatchFrunk WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchFrunk WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77076E72251D757D0024A260 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		773011FB251D008600FC7975 /* OpenFrunkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OpenFrunkButton.swift; path = "WatchFrunk WatchKit Extension/Views/OpenFrunkButton.swift"; sourceTree = SOURCE_ROOT; };
+		77301247251D4A0300FC7975 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		7730124F251D4A7000FC7975 /* VehicleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleList.swift; sourceTree = "<group>"; };
+		77301254251D4C1600FC7975 /* TeslaAPIBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaAPIBridge.swift; sourceTree = "<group>"; };
+		7730125C251D647200FC7975 /* PagerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerManager.swift; sourceTree = "<group>"; };
+		774908B8251BF8BC003F9825 /* Frunk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frunk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		774908BC251BF8BC003F9825 /* FrunkWatchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrunkWatchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774908C1251BF8BF003F9825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774908C3251BF8BF003F9825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		774908C8251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchFrunk WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		774908C8251BF8BF003F9825 /* FrunkWatchKitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FrunkWatchKitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		774908CD251BF8BF003F9825 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		774908CF251BF8BF003F9825 /* WatchFrunkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFrunkApp.swift; sourceTree = "<group>"; };
 		774908D1251BF8BF003F9825 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		774908D3251BF8C0003F9825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774908D6251BF8C0003F9825 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		774908D8251BF8C0003F9825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774908E9251BF8DF003F9825 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		774908F8251BFABE003F9825 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		778BAE85251E96F400AFAAC9 /* Circular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,27 +104,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776D4CD4251BFC040099F6D5 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77301246251D49EC00FC7975 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				778BAE84251E96E600AFAAC9 /* Complications */,
+				773011FB251D008600FC7975 /* OpenFrunkButton.swift */,
+				774908CD251BF8BF003F9825 /* ContentView.swift */,
+				77301247251D4A0300FC7975 /* LoginScreen.swift */,
+				7730124F251D4A7000FC7975 /* VehicleList.swift */,
+				7730125C251D647200FC7975 /* PagerManager.swift */,
+				77076E72251D757D0024A260 /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		774908B1251BF8BC003F9825 = {
 			isa = PBXGroup;
 			children = (
 				774908C0251BF8BC003F9825 /* WatchFrunk WatchKit App */,
 				774908CC251BF8BF003F9825 /* WatchFrunk WatchKit Extension */,
 				774908B9251BF8BC003F9825 /* Products */,
+				778BAE99251EB00000AFAAC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		774908B9251BF8BC003F9825 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				774908B8251BF8BC003F9825 /* WatchFrunk.app */,
-				774908BC251BF8BC003F9825 /* WatchFrunk WatchKit App.app */,
-				774908C8251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex */,
+				774908B8251BF8BC003F9825 /* Frunk.app */,
+				774908BC251BF8BC003F9825 /* FrunkWatchKitApp.app */,
+				774908C8251BF8BF003F9825 /* FrunkWatchKitExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,12 +157,15 @@
 		774908CC251BF8BF003F9825 /* WatchFrunk WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				774908CD251BF8BF003F9825 /* ContentView.swift */,
+				77301246251D49EC00FC7975 /* Views */,
 				774908CF251BF8BF003F9825 /* WatchFrunkApp.swift */,
 				774908D1251BF8BF003F9825 /* ComplicationController.swift */,
-				774908D3251BF8C0003F9825 /* Assets.xcassets */,
 				774908D8251BF8C0003F9825 /* Info.plist */,
+				774908D3251BF8C0003F9825 /* Assets.xcassets */,
 				774908D5251BF8C0003F9825 /* Preview Content */,
+				774908F8251BFABE003F9825 /* Constants.swift */,
+				774908E9251BF8DF003F9825 /* UserData.swift */,
+				77301254251D4C1600FC7975 /* TeslaAPIBridge.swift */,
 			);
 			path = "WatchFrunk WatchKit Extension";
 			sourceTree = "<group>";
@@ -133,12 +178,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		778BAE84251E96E600AFAAC9 /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				778BAE85251E96F400AFAAC9 /* Circular.swift */,
+			);
+			path = Complications;
+			sourceTree = "<group>";
+		};
+		778BAE99251EB00000AFAAC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		774908B7251BF8BC003F9825 /* WatchFrunk */ = {
+		774908B7251BF8BC003F9825 /* Frunk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 774908E3251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk" */;
+			buildConfigurationList = 774908E3251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "Frunk" */;
 			buildPhases = (
 				774908B6251BF8BC003F9825 /* Resources */,
 				774908E2251BF8C0003F9825 /* Embed Watch Content */,
@@ -148,14 +208,16 @@
 			dependencies = (
 				774908BF251BF8BC003F9825 /* PBXTargetDependency */,
 			);
-			name = WatchFrunk;
+			name = Frunk;
+			packageProductDependencies = (
+			);
 			productName = WatchFrunk;
-			productReference = 774908B8251BF8BC003F9825 /* WatchFrunk.app */;
+			productReference = 774908B8251BF8BC003F9825 /* Frunk.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		774908BB251BF8BC003F9825 /* WatchFrunk WatchKit App */ = {
+		774908BB251BF8BC003F9825 /* FrunkWatchKitApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 774908DF251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk WatchKit App" */;
+			buildConfigurationList = 774908DF251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "FrunkWatchKitApp" */;
 			buildPhases = (
 				774908BA251BF8BC003F9825 /* Resources */,
 				774908DE251BF8C0003F9825 /* Embed App Extensions */,
@@ -164,15 +226,16 @@
 			);
 			dependencies = (
 				774908CB251BF8BF003F9825 /* PBXTargetDependency */,
+				778BAE9B251EB00000AFAAC9 /* PBXTargetDependency */,
 			);
-			name = "WatchFrunk WatchKit App";
+			name = FrunkWatchKitApp;
 			productName = "WatchFrunk WatchKit App";
-			productReference = 774908BC251BF8BC003F9825 /* WatchFrunk WatchKit App.app */;
+			productReference = 774908BC251BF8BC003F9825 /* FrunkWatchKitApp.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		774908C7251BF8BF003F9825 /* WatchFrunk WatchKit Extension */ = {
+		774908C7251BF8BF003F9825 /* FrunkWatchKitExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 774908DB251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk WatchKit Extension" */;
+			buildConfigurationList = 774908DB251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "FrunkWatchKitExtension" */;
 			buildPhases = (
 				774908C4251BF8BF003F9825 /* Sources */,
 				774908C5251BF8BF003F9825 /* Frameworks */,
@@ -182,9 +245,12 @@
 			);
 			dependencies = (
 			);
-			name = "WatchFrunk WatchKit Extension";
+			name = FrunkWatchKitExtension;
+			packageProductDependencies = (
+				776D4CD3251BFC040099F6D5 /* KeychainAccess */,
+			);
 			productName = "WatchFrunk WatchKit Extension";
-			productReference = 774908C8251BF8BF003F9825 /* WatchFrunk WatchKit Extension.appex */;
+			productReference = 774908C8251BF8BF003F9825 /* FrunkWatchKitExtension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 774908B5251BF8BC003F9825 /* Build configuration list for PBXProject "WatchFrunk" */;
+			buildConfigurationList = 774908B5251BF8BC003F9825 /* Build configuration list for PBXProject "Frunk" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,13 +282,16 @@
 				Base,
 			);
 			mainGroup = 774908B1251BF8BC003F9825;
+			packageReferences = (
+				776D4CD2251BFC040099F6D5 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 774908B9251BF8BC003F9825 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				774908B7251BF8BC003F9825 /* WatchFrunk */,
-				774908BB251BF8BC003F9825 /* WatchFrunk WatchKit App */,
-				774908C7251BF8BF003F9825 /* WatchFrunk WatchKit Extension */,
+				774908B7251BF8BC003F9825 /* Frunk */,
+				774908BB251BF8BC003F9825 /* FrunkWatchKitApp */,
+				774908C7251BF8BF003F9825 /* FrunkWatchKitExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -259,8 +328,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773011FC251D008600FC7975 /* OpenFrunkButton.swift in Sources */,
+				774908F9251BFABE003F9825 /* Constants.swift in Sources */,
+				77301250251D4A7000FC7975 /* VehicleList.swift in Sources */,
+				77301255251D4C1600FC7975 /* TeslaAPIBridge.swift in Sources */,
 				774908D0251BF8BF003F9825 /* WatchFrunkApp.swift in Sources */,
 				774908CE251BF8BF003F9825 /* ContentView.swift in Sources */,
+				77301248251D4A0300FC7975 /* LoginScreen.swift in Sources */,
+				774908EA251BF8DF003F9825 /* UserData.swift in Sources */,
+				7730125D251D647200FC7975 /* PagerManager.swift in Sources */,
+				77076E73251D757D0024A260 /* Settings.swift in Sources */,
+				778BAE86251E96F400AFAAC9 /* Circular.swift in Sources */,
 				774908D2251BF8BF003F9825 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,13 +348,18 @@
 /* Begin PBXTargetDependency section */
 		774908BF251BF8BC003F9825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 774908BB251BF8BC003F9825 /* WatchFrunk WatchKit App */;
+			target = 774908BB251BF8BC003F9825 /* FrunkWatchKitApp */;
 			targetProxy = 774908BE251BF8BC003F9825 /* PBXContainerItemProxy */;
 		};
 		774908CB251BF8BF003F9825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 774908C7251BF8BF003F9825 /* WatchFrunk WatchKit Extension */;
+			target = 774908C7251BF8BF003F9825 /* FrunkWatchKitExtension */;
 			targetProxy = 774908CA251BF8BF003F9825 /* PBXContainerItemProxy */;
+		};
+		778BAE9B251EB00000AFAAC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 774908C7251BF8BF003F9825 /* FrunkWatchKitExtension */;
+			targetProxy = 778BAE9A251EB00000AFAAC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchFrunk WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WatchFrunk\\ WatchKit\\ Extension/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "WatchFrunk WatchKit Extension/Info.plist";
@@ -409,7 +492,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -424,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchFrunk WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WatchFrunk\\ WatchKit\\ Extension/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "WatchFrunk WatchKit Extension/Info.plist";
@@ -433,7 +517,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk.watchkitapp.watchkitextension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -453,7 +538,8 @@
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
 				IBSC_MODULE = WatchFrunk_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchFrunk WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk.watchkitapp;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -473,7 +559,8 @@
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
 				IBSC_MODULE = WatchFrunk_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchFrunk WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk.watchkitapp;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -489,9 +576,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk;
+				PRODUCT_NAME = Frunk;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -502,9 +589,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TYTAQNPPUB;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.WatchFrunk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.archduketim.Frunk;
+				PRODUCT_NAME = Frunk;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -512,7 +599,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		774908B5251BF8BC003F9825 /* Build configuration list for PBXProject "WatchFrunk" */ = {
+		774908B5251BF8BC003F9825 /* Build configuration list for PBXProject "Frunk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				774908D9251BF8C0003F9825 /* Debug */,
@@ -521,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		774908DB251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk WatchKit Extension" */ = {
+		774908DB251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "FrunkWatchKitExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				774908DC251BF8C0003F9825 /* Debug */,
@@ -530,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		774908DF251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk WatchKit App" */ = {
+		774908DF251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "FrunkWatchKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				774908E0251BF8C0003F9825 /* Debug */,
@@ -539,7 +626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		774908E3251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "WatchFrunk" */ = {
+		774908E3251BF8C0003F9825 /* Build configuration list for PBXNativeTarget "Frunk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				774908E4251BF8C0003F9825 /* Debug */,
@@ -549,6 +636,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		776D4CD2251BFC040099F6D5 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		776D4CD3251BFC040099F6D5 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 776D4CD2251BFC040099F6D5 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 774908B2251BF8BC003F9825 /* Project object */;
 }

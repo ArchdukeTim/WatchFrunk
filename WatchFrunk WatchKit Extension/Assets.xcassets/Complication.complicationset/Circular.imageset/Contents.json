@@ -1,21 +1,25 @@
 {
   "images" : [
     {
+      "filename" : "Frunk32.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145"
     },
     {
+      "filename" : "Frunk36.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161"
     },
     {
+      "filename" : "Frunk36-1.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">145"
     },
     {
+      "filename" : "Frunk40.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">183"
